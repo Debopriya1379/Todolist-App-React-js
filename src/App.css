@@ -1,3 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  position: absolute;
+  width: 100vw;
+}
+
 .App {
   text-align: center;
 }

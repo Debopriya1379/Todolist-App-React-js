@@ -1,0 +1,29 @@
+.TasksContainer{
+    /* display: flex; */
+    max-width: 500px;
+    min-height: 70vh;
+    /* justify-content: space-between; */
+}
+.cards{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(142, 255, 127);
+    margin: 20px;
+    padding: 10px;
+}
+.cards button{
+    background-color: rgb(51, 140, 223);
+}
+.head{
+    background-color: bisque;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.body{
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

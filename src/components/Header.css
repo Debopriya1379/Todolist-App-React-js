@@ -1,0 +1,24 @@
+.Header{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-around;
+    /* position: relative; */
+    /* width: 100vw; */
+}
+.Header ul li{
+    float: left;
+    margin: 10px 50px;
+    list-style: none;
+    color: white;
+}
+.Header ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+.Header ul li h3{
+    color: rgba(80, 255, 86, 0.919);
+}
