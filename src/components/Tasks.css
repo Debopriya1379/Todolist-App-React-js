@@ -1,29 +1,38 @@
 .TasksContainer{
     /* display: flex; */
-    max-width: 500px;
-    min-height: 70vh;
+    /* max-width: 500px; */
+    /* min-height: 70vh; */
     /* justify-content: space-between; */
+    width: 80vw;
+    min-height: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.2 linear;
 }
 .cards{
-    width: 200px;
+    /* width: 200px;
     height: 100px;
     background-color: rgb(142, 255, 127);
     margin: 20px;
+    padding: 10px; */
+    width: 300px;
+    min-height: 100px;
+    max-height: 150px;
+    margin: 20px;
+    background-color: #64e3e3;
     padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+.cards H4, p{
+    text-align: center;
 }
 .cards button{
-    background-color: rgb(51, 140, 223);
-}
-.head{
-    background-color: bisque;
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid black;
-}
-.body{
-    padding: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(247, 70, 70);
+    margin: auto;
+    padding: 5px 10px;
 }

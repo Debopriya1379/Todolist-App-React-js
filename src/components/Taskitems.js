@@ -1,5 +1,5 @@
 import React from 'react'
-// import './Tasks.css'
+import './Tasks.css'
 
 export default function Taskitems({Task,onDelete}) {
     return (

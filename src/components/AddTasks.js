@@ -17,10 +17,10 @@ export default function AddTasks(props) {
     }
     return (
         <div className="AddTasks">
-            <h3>Here You can add your Tasks</h3>  
+            <h3>Here you can add your Tasks</h3>  
             <form onSubmit={submit}>
-                <input type="text" value={title} id="title" onChange={(e=>{settitle(e.target.value)})} placeholder="add title" /><br/>
-                <input type="text" value={desc} id="desc" onChange={(e)=>{setdesc(e.target.value)}} placeholder="add desc" /><br/>
+                <input type="text" value={title} id="title" onChange={(e=>{settitle(e.target.value)})} placeholder="add title" />
+                <input type="text" value={desc} id="desc" onChange={(e)=>{setdesc(e.target.value)}} placeholder="add desc" />
                 <button>add</button>
             </form>
         </div>

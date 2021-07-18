@@ -7,3 +7,19 @@
     width: 100vw;
     height: 200px;
 }
+.AddTasks form{
+    display: flex;
+    flex-direction: column;
+}
+.AddTasks input{
+    width: 200px;
+    height: 20px;
+    margin: 2px;
+}
+.AddTasks button{
+    background-color: chartreuse;
+    margin: auto;
+    margin-top: 4px;
+    padding: 0px 10px;
+}
+

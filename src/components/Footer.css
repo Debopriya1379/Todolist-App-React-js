@@ -1,10 +1,10 @@
 .Footer{
     background-color: black;
     color: white;
-    /* position:relative; */
-    /* top: 10vh; */
+    position:relative;
+    top: 38vh;
     width: 100%;
-    padding: 40px 0px;
+    padding: 50px 0px;
     text-align: center;
     font-size: 14px;
 }
