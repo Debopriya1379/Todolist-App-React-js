@@ -4,8 +4,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 100vw;
     height: 200px;
+    margin: 0;
 }
 .AddTasks form{
     display: flex;
@@ -21,5 +23,8 @@
     margin: auto;
     margin-top: 4px;
     padding: 0px 10px;
+}
+#AsinIcon{
+    font-size: 35px;
 }
 

@@ -7,16 +7,20 @@ import AddTasks from "./components/AddTasks"
 import About from "./components/About";
 import {
   BrowserRouter as Router,
-  Switch, Route
+  Switch,
+  Route
 } from "react-router-dom";
 
 function App() {
+
   let inittask;
+
   if (localStorage.getItem("tasks") === null) {
     inittask = [];
   } else {
     inittask = JSON.parse(localStorage.getItem("tasks"));
   }
+
   const onDelete = (Task) => {
     console.log("I am onDelete of", Task);
 
@@ -25,6 +29,7 @@ function App() {
     }));
     localStorage.setItem('tasks', JSON.stringify(tasks))
   };
+
   const addTasks = (title, desc) => {
     console.log("i am adding this task", title, desc);
     let sNo;
@@ -45,13 +50,16 @@ function App() {
     //   localStorage.setItem('tasks',JSON.stringify(tasks));
     // }
   };
+
   const [tasks, setTasks] = useState(inittask);
+
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
+  
   return (
     <Router>
-      <div className="container">
+      <div className="container"> 
         <Header title="TodaysList" />
         <Switch>
           <Route exact path="/" render={() => {

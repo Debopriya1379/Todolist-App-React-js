@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import AssignmentIcon from '@material-ui/icons/Assignment';
 import './AddTasks.css';
 
 export default function AddTasks(props) {
@@ -8,7 +9,7 @@ export default function AddTasks(props) {
     const submit=(e)=>{
         e.preventDefault();
         if(! title || ! desc){
-            alert("Title ar Description cannot be blank");
+            alert("Title and Description cannot be blank");
         }else{
             props.addTasks(title,desc);
             settitle("");
@@ -17,7 +18,8 @@ export default function AddTasks(props) {
     }
     return (
         <div className="AddTasks">
-            <h3>Here you can add your Tasks</h3>  
+            <h3>Here you can add your Tasks</h3> 
+            <AssignmentIcon id="AsinIcon"/>   
             <form onSubmit={submit}>
                 <input type="text" value={title} id="title" onChange={(e=>{settitle(e.target.value)})} placeholder="add title" />
                 <input type="text" value={desc} id="desc" onChange={(e)=>{setdesc(e.target.value)}} placeholder="add desc" />
